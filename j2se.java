@@ -47,4 +47,35 @@ public class j2se {
         }
     }
 
+    @Test
+    public void fun2(){
+        //求1+1/2-1/3+...到n的值
+        int n=100;
+        double result=1.0;//result要为小数
+        for(int i =2; i<n+1;i++){
+            if(i%2==0){
+                result=result+1.0/i;//注意,分子要为小数
+            }else{
+                result=result-1.0/i;
+            }
+        }
+        System.out.println("*******");
+        System.out.println(result);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
